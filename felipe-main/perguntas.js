@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     criaCartao(
         'Oceano', 
         'Qual é o maior oceano do mundo?', 
-        '0ceano Pacifico´
+        '0ceano Pacifico'
     );
 
     criaCartao(
