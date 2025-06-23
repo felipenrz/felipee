@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     criaCartao(
         'Livros', 
         'Quem criou "Dom Quixote', 
-        'Mguel de Cervantes.'
+        'Miguel de Cervantes.'
     );
 
     criaCartao(
