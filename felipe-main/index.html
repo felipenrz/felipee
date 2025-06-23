@@ -1,41 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flashcard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flash Card Flash</title>
 </head>
 <body>
     <main>
-<section id="container">
-   <article class="cartao">
-        <div class="cartao__conteuo">
-            <h3>programação</h3>
-            <div class="cartao__conteudo__pergunta">
-                O que é CSS
-            </div>
-            <div class="cartao__conteudo__resposta">
-                O CSS é uma linguem de estilização
-                <article class="cartao">
-        <div class="cartao__conteuo">
-            <h3>programação</h3>
-            <div class="cartao__conteudo__pergunta">
-                O que é Javascript
-            </div>
-            <div class="cartao__conteudo__resposta">
-                O Javascript é uma linguagem de programação
-            </div>
-            </div> 
-    
-    
-    
-        </div>
-        
-    </article>
-</section>
+        <section id="container">
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Oceano</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é o maior oceano do mundo?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>0ceano Pacifico</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Livros</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Quem criou "Dom Quixote</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Miguel de Cervantes.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>pais</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é a capital a australia?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Canberra</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Ciencia</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Em que ano o homem pisou na lua pela primeira vez?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>1969</p>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
     <footer>
-        <p></p>
+        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
     </footer>
+    <script src="app.js"></script>
+    <script>
+        // Adiciona o evento de clique para virar os cartões já existentes no HTML
+        document.querySelectorAll('.cartao').forEach(cartao => {
+            cartao.addEventListener('click', viraCartao);
+        });
+    </script>
 </body>
 </html>
